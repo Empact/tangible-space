@@ -1,0 +1,9 @@
+# xcode noise
+build/
+*.pyc
+*.pbxuser
+*.perspective
+*.perspectivev3
+*.mode1v3
+*.tm_build_errors
+*~.nib/
