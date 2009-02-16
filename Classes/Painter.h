@@ -13,6 +13,6 @@
 
 }
 
--(void) saySomething;
+-(void) startPainting;
 
 @end

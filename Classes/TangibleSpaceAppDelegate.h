@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
+@class Painter;
+
 @interface TangibleSpaceAppDelegate : NSObject <UIApplicationDelegate> {
     UIWindow *window;
+    Painter *painter;
 }
 
 - (IBAction)startPainting;

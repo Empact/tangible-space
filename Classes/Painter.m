@@ -11,8 +11,8 @@
 
 @implementation Painter
 
-- (void)saySomething {
-	[NSException raise:@"Got to saySomething" format:@"success"];
+- (void)startPainting {
+    NSLog(@"starting painting from painter %@", self);
 }
 
 @end

@@ -14,9 +14,13 @@
 @synthesize window;
 
 - (IBAction)startPainting {
-	Painter *painter = [[Painter alloc] init];
-	[painter saySomething];
-	[painter release];
+    if (painter == nil) {
+        painter = [[Painter alloc] init];
+        NSLog(@"painter initialized to %@", painter);
+        [painter startPainting];
+    } else {
+        NSLog(@"painter already initialized");
+    }
 }
 
 - (void)applicationDidFinishLaunching:(UIApplication *)application {    
@@ -27,6 +31,8 @@
 
 
 - (void)dealloc {
+    NSLog(@"releasing painter %@", painter);
+    [painter release];
     [window release];
     [super dealloc];
 }
