@@ -51,12 +51,8 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				6B63F8ED0F49407200640AE4 /* Canvas.h */,
-				6B63F8EE0F49407200640AE4 /* Canvas.m */,
-				1D3623240D0F684500981E51 /* TangibleSpaceAppDelegate.h */,
-				1D3623250D0F684500981E51 /* TangibleSpaceAppDelegate.m */,
-				6B63F7B70F49293D00640AE4 /* Painter.h */,
-				6B63F7B80F49293D00640AE4 /* Painter.m */,
+				6B63F91B0F4941CC00640AE4 /* Controllers */,
+				6B63F91A0F4941C500640AE4 /* Models */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -107,6 +103,26 @@
 				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6B63F91A0F4941C500640AE4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6B63F7B70F49293D00640AE4 /* Painter.h */,
+				6B63F7B80F49293D00640AE4 /* Painter.m */,
+				6B63F8ED0F49407200640AE4 /* Canvas.h */,
+				6B63F8EE0F49407200640AE4 /* Canvas.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		6B63F91B0F4941CC00640AE4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1D3623240D0F684500981E51 /* TangibleSpaceAppDelegate.h */,
+				1D3623250D0F684500981E51 /* TangibleSpaceAppDelegate.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
