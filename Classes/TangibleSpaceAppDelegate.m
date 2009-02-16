@@ -7,32 +7,23 @@
 //
 
 #import "TangibleSpaceAppDelegate.h"
-#import "RootViewController.h"
-
 
 @implementation TangibleSpaceAppDelegate
 
 @synthesize window;
-@synthesize navigationController;
 
 
-- (void)applicationDidFinishLaunching:(UIApplication *)application {
-	
-	// Configure and show the window
-	[window addSubview:[navigationController view]];
-	[window makeKeyAndVisible];
-}
+- (void)applicationDidFinishLaunching:(UIApplication *)application {    
 
-
-- (void)applicationWillTerminate:(UIApplication *)application {
-	// Save data if appropriate
+    // Override point for customization after application launch
+    [window makeKeyAndVisible];
 }
 
 
 - (void)dealloc {
-	[navigationController release];
-	[window release];
-	[super dealloc];
+    [window release];
+    [super dealloc];
 }
+
 
 @end
