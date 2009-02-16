@@ -11,7 +11,7 @@
 @class Canvas;
 
 @interface Painter : NSObject {
-
+    Canvas *canvas;
 }
 
 -(void) startPainting;

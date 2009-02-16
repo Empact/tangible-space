@@ -12,13 +12,24 @@
 @implementation Painter
 
 - (void)startPainting {
-    NSLog(@"starting painting from painter %@", self);
+    if (canvas == nil) {
+        canvas = [[Canvas alloc] init];
+        NSLog(@"%@ is starting to paint %@", self, canvas);
+    } else {
+        NSLog(@"%@ is busy with %@", self, canvas);
+    }
 }
 
 - (Canvas*)stopPainting {
-    Canvas *result = [[Canvas alloc] init];
-    NSLog(@"stopping painting from painter %@, returning %@", self, result);
-    return result;
+    if (canvas == nil) {
+        NSLog(@"%@ hasn't started anything", self);
+        return nil;
+    } else {
+        NSLog(@"%@ finished %@", self, canvas);
+        Canvas *result = canvas;
+        canvas = nil;
+        return result;
+    }
 }
 
 @end

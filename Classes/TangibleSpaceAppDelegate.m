@@ -15,26 +15,17 @@
 @synthesize window;
 
 - (IBAction)startPainting {
-    if (painter == nil) {
-        painter = [[Painter alloc] init];
-        NSLog(@"painter initialized to %@", painter);
-        [painter startPainting];
-    } else {
-        NSLog(@"painter already initialized");
-    }
+    [painter startPainting];
 }
 
 - (IBAction)stopPainting {
-    if (painter == nil) {
-        NSLog(@"but you haven't even started!");
-    } else {
-        Canvas *canvas = [painter stopPainting];
-        NSLog(@"painting completed with canvas %@", canvas);
-        [canvas release];
-    }
+    Canvas *canvas = [painter stopPainting];
+    NSLog(@"painting completed with canvas %@", canvas);
+    [canvas release];
 }
 
-- (void)applicationDidFinishLaunching:(UIApplication *)application {    
+- (void)applicationDidFinishLaunching:(UIApplication *)application {
+    painter = [[Painter alloc] init];
 
     // Override point for customization after application launch
     [window makeKeyAndVisible];
