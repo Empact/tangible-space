@@ -7,13 +7,16 @@
 //
 
 #import "TangibleSpaceAppDelegate.h"
+#import "Painter.h"
 
 @implementation TangibleSpaceAppDelegate
 
 @synthesize window;
 
 - (IBAction)startPainting {
-	[NSException raise:@"Got to startPainting" format:@"success"];
+	Painter *painter = [[Painter alloc] init];
+	[painter saySomething];
+	[painter release];
 }
 
 - (void)applicationDidFinishLaunching:(UIApplication *)application {    

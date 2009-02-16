@@ -13,4 +13,6 @@
 
 }
 
+-(void) saySomething;
+
 @end
