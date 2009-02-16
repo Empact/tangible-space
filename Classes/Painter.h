@@ -14,5 +14,6 @@
 }
 
 -(void) startPainting;
+-(NSInteger) stopPainting;
 
 @end

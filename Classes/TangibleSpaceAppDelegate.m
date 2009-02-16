@@ -23,6 +23,15 @@
     }
 }
 
+- (IBAction)stopPainting {
+    if (painter == nil) {
+        NSLog(@"but you haven't even started!");
+    } else {
+        NSInteger canvas = [painter stopPainting];
+        NSLog(@"painting completed with canvas %d", canvas);
+    }
+}
+
 - (void)applicationDidFinishLaunching:(UIApplication *)application {    
 
     // Override point for customization after application launch

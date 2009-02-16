@@ -16,6 +16,7 @@
 }
 
 - (IBAction)startPainting;
+- (IBAction)stopPainting;
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 

@@ -15,4 +15,10 @@
     NSLog(@"starting painting from painter %@", self);
 }
 
+- (NSInteger)stopPainting {
+    NSInteger result = 12;
+    NSLog(@"stopping painting from painter %@", self);
+    return result;
+}
+
 @end
