@@ -8,6 +8,7 @@
 
 #import "TangibleSpaceAppDelegate.h"
 #import "Painter.h"
+#import "Canvas.h"
 
 @implementation TangibleSpaceAppDelegate
 
@@ -27,8 +28,9 @@
     if (painter == nil) {
         NSLog(@"but you haven't even started!");
     } else {
-        NSInteger canvas = [painter stopPainting];
-        NSLog(@"painting completed with canvas %d", canvas);
+        Canvas *canvas = [painter stopPainting];
+        NSLog(@"painting completed with canvas %@", canvas);
+        [canvas release];
     }
 }
 

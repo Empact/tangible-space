@@ -14,6 +14,7 @@
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		6B63F7B90F49293D00640AE4 /* Painter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B63F7B80F49293D00640AE4 /* Painter.m */; };
+		6B63F8EF0F49407200640AE4 /* Canvas.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B63F8EE0F49407200640AE4 /* Canvas.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,8 @@
 		32CA4F630368D1EE00C91783 /* TangibleSpace_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TangibleSpace_Prefix.pch; sourceTree = "<group>"; };
 		6B63F7B70F49293D00640AE4 /* Painter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Painter.h; sourceTree = "<group>"; };
 		6B63F7B80F49293D00640AE4 /* Painter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Painter.m; sourceTree = "<group>"; };
+		6B63F8ED0F49407200640AE4 /* Canvas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Canvas.h; sourceTree = "<group>"; };
+		6B63F8EE0F49407200640AE4 /* Canvas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Canvas.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -48,6 +51,8 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				6B63F8ED0F49407200640AE4 /* Canvas.h */,
+				6B63F8EE0F49407200640AE4 /* Canvas.m */,
 				1D3623240D0F684500981E51 /* TangibleSpaceAppDelegate.h */,
 				1D3623250D0F684500981E51 /* TangibleSpaceAppDelegate.m */,
 				6B63F7B70F49293D00640AE4 /* Painter.h */,
@@ -160,6 +165,7 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* TangibleSpaceAppDelegate.m in Sources */,
 				6B63F7B90F49293D00640AE4 /* Painter.m in Sources */,
+				6B63F8EF0F49407200640AE4 /* Canvas.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

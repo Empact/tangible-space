@@ -8,12 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
+@class Canvas;
 
 @interface Painter : NSObject {
 
 }
 
 -(void) startPainting;
--(NSInteger) stopPainting;
+-(Canvas *) stopPainting;
 
 @end

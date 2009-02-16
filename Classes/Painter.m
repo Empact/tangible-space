@@ -7,7 +7,7 @@
 //
 
 #import "Painter.h"
-
+#import "Canvas.h"
 
 @implementation Painter
 
@@ -15,9 +15,9 @@
     NSLog(@"starting painting from painter %@", self);
 }
 
-- (NSInteger)stopPainting {
-    NSInteger result = 12;
-    NSLog(@"stopping painting from painter %@", self);
+- (Canvas*)stopPainting {
+    Canvas *result = [[Canvas alloc] init];
+    NSLog(@"stopping painting from painter %@, returning %@", self, result);
     return result;
 }
 
