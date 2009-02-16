@@ -12,6 +12,9 @@
 
 @synthesize window;
 
+- (IBAction)startPainting {
+	[NSException raise:@"Got to startPainting" format:@"success"];
+}
 
 - (void)applicationDidFinishLaunching:(UIApplication *)application {    
 
