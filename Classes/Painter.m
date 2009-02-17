@@ -14,6 +14,7 @@
 - (void)startPainting {
     if (canvas == nil) {
         canvas = [[Canvas alloc] init];
+        [[UIAccelerometer sharedAccelerometer] setDelegate:canvas];
         NSLog(@"%@ is starting to paint %@", self, canvas);
     } else {
         NSLog(@"%@ is busy with %@", self, canvas);

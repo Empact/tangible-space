@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 
-@interface Canvas : NSObject {
+@interface Canvas : NSObject <UIAccelerometerDelegate> {
 
 }
 
